@@ -1,0 +1,64 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:TransRD.ViewModels"
+             x:Class="TransRD.Views.RegisterPage"
+             x:DataType="viewmodels:RegisterViewModel"
+             xmlns:controls="clr-namespace:TransRD.Controls"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20" Margin="0,50,0,0" >
+            <Image Source="logo_transrd.png" HeightRequest="200" HorizontalOptions="Center" />
+            
+
+            <Frame BorderColor="Gray" CornerRadius="5" Padding="0" HasShadow="False" BackgroundColor="White">
+                <Entry Placeholder="Nombre completo"
+                       Text="{Binding FullName}" 
+                       FontAttributes="Bold" 
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center" />
+            </Frame>
+
+            <Frame BorderColor="Gray" CornerRadius="5" Padding="0" HasShadow="False" BackgroundColor="White">
+                <Entry Placeholder="Correo Electronico"
+                       Text="{Binding Email}" 
+                       FontAttributes="Bold" 
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center" />
+            </Frame>
+
+
+
+            <controls:PasswordEntry Placeholder="Contraseña" Password="{Binding Password, Mode=TwoWay}" />
+            <controls:PasswordEntry Placeholder=" Confirmar Contraseña" Password="{Binding ConfirmPassword, Mode=TwoWay}" />
+
+
+
+
+
+
+
+
+
+
+
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <CheckBox IsChecked="{Binding AcceptTerms}" Color="Black"/>
+                <Label Text="Acepto términos y condiciones" VerticalOptions="Center" TextColor="Black"/>
+            </StackLayout>
+            
+            <Button Text="Registrarse" BackgroundColor="Black" 
+                    TextColor="White" 
+                    Command="{Binding RegisterCommand}" 
+                    HeightRequest="40" 
+                    FontSize="14" 
+                    WidthRequest="200"/>
+            
+            <Label Text="Ir a inicio de sesión" TextColor="Blue" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NavigateToLoginCommand}" />
+                </Label.GestureRecognizers>
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

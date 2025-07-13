@@ -1,0 +1,50 @@
+﻿<!-- LoginPage.xaml (View) -->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:TransRD.ViewModels"
+             xmlns:controls="clr-namespace:TransRD.Controls"
+             x:Class="TransRD.Views.LoginPage"
+             x:DataType="viewmodels:LoginViewModel"
+             
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20" Margin="0,100,0,0">
+            <Image Source="logo_transrd.png" HeightRequest="200" HorizontalOptions="Center" Margin="0,25" />
+
+            <Frame BorderColor="Gray" CornerRadius="5" Padding="0" HasShadow="False" BackgroundColor="White">
+                <Entry Placeholder="Correo electrónico" 
+                   Text="{Binding Email}" 
+                   HorizontalTextAlignment="Center" 
+                   Keyboard="Email" 
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   />
+            </Frame>
+
+            <controls:PasswordEntry Placeholder="Contraseña" Password="{Binding Password, Mode=TwoWay}" />
+
+
+            <Button Text="Iniciar Sesión"
+                    BackgroundColor="Black" 
+                    TextColor="White" 
+                    Command="{Binding LoginCommand}" 
+                    HeightRequest="50" 
+                    FontSize="14" 
+                    WidthRequest="120" 
+                    CornerRadius="8" 
+                    Margin="0,25"/>
+
+            <Label Text="Registrarse" TextColor="Blue" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NavigateToRegisterCommand}" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Text="¿Olvidaste tu contraseña?" TextColor="Blue" HorizontalOptions="Center" TextDecorations="Underline">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NavigateToResetPasswordCommand}" />
+                </Label.GestureRecognizers>
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

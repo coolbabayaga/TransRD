@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TransRD</name>
+    </assembly>
+    <members>
+        <member name="T:TransRD.ViewModels.LoginViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TransRD.ViewModels.LoginViewModel.Email">
+            <inheritdoc cref="F:TransRD.ViewModels.LoginViewModel.email"/>
+        </member>
+        <member name="P:TransRD.ViewModels.LoginViewModel.Password">
+            <inheritdoc cref="F:TransRD.ViewModels.LoginViewModel.password"/>
+        </member>
+        <member name="F:TransRD.ViewModels.LoginViewModel.loginCommand">
+            <summary>The backing field for <see cref="P:TransRD.ViewModels.LoginViewModel.LoginCommand"/>.</summary>
+        </member>
+        <member name="P:TransRD.ViewModels.LoginViewModel.LoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TransRD.ViewModels.LoginViewModel.LoginAsync"/>.</summary>
+        </member>
+        <member name="F:TransRD.ViewModels.LoginViewModel.navigateToRegisterCommand">
+            <summary>The backing field for <see cref="P:TransRD.ViewModels.LoginViewModel.NavigateToRegisterCommand"/>.</summary>
+        </member>
+        <member name="P:TransRD.ViewModels.LoginViewModel.NavigateToRegisterCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TransRD.ViewModels.LoginViewModel.NavigateToRegisterAsync"/>.</summary>
+        </member>
+        <member name="F:TransRD.ViewModels.LoginViewModel.navigateToResetPasswordCommand">
+            <summary>The backing field for <see cref="P:TransRD.ViewModels.LoginViewModel.NavigateToResetPasswordCommand"/>.</summary>
+        </member>
+        <member name="P:TransRD.ViewModels.LoginViewModel.NavigateToResetPasswordCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TransRD.ViewModels.LoginViewModel.NavigateToResetPasswordAsync"/>.</summary>
+        </member>
+        <member name="T:TransRD.ViewModels.RecuperarClaveViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TransRD.ViewModels.RecuperarClaveViewModel.Mail">
+            <inheritdoc cref="F:TransRD.ViewModels.RecuperarClaveViewModel.mail"/>
+        </member>
+        <member name="F:TransRD.ViewModels.RecuperarClaveViewModel.sendResetCommand">
+            <summary>The backing field for <see cref="P:TransRD.ViewModels.RecuperarClaveViewModel.SendResetCommand"/>.</summary>
+        </member>
+        <member name="P:TransRD.ViewModels.RecuperarClaveViewModel.SendResetCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TransRD.ViewModels.RecuperarClaveViewModel.SendResetAsync"/>.</summary>
+        </member>
+        <member name="F:TransRD.ViewModels.RecuperarClaveViewModel.navigateToLoginCommand">
+            <summary>The backing field for <see cref="P:TransRD.ViewModels.RecuperarClaveViewModel.NavigateToLoginCommand"/>.</summary>
+        </member>
+        <member name="P:TransRD.ViewModels.RecuperarClaveViewModel.NavigateToLoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TransRD.ViewModels.RecuperarClaveViewModel.NavigateToLoginAsync"/>.</summary>
+        </member>
+        <member name="T:TransRD.ViewModels.RegisterViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TransRD.ViewModels.RegisterViewModel.FullName">
+            <inheritdoc cref="F:TransRD.ViewModels.RegisterViewModel.fullName"/>
+        </member>
+        <member name="P:TransRD.ViewModels.RegisterViewModel.Email">
+            <inheritdoc cref="F:TransRD.ViewModels.RegisterViewModel.email"/>
+        </member>
+        <member name="P:TransRD.ViewModels.RegisterViewModel.Password">
+            <inheritdoc cref="F:TransRD.ViewModels.RegisterViewModel.password"/>
+        </member>
+        <member name="P:TransRD.ViewModels.RegisterViewModel.ConfirmPassword">
+            <inheritdoc cref="F:TransRD.ViewModels.RegisterViewModel.confirmPassword"/>
+        </member>
+        <member name="P:TransRD.ViewModels.RegisterViewModel.AcceptTerms">
+            <inheritdoc cref="F:TransRD.ViewModels.RegisterViewModel.acceptTerms"/>
+        </member>
+        <member name="F:TransRD.ViewModels.RegisterViewModel.registerCommand">
+            <summary>The backing field for <see cref="P:TransRD.ViewModels.RegisterViewModel.RegisterCommand"/>.</summary>
+        </member>
+        <member name="P:TransRD.ViewModels.RegisterViewModel.RegisterCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TransRD.ViewModels.RegisterViewModel.RegisterAsync"/>.</summary>
+        </member>
+        <member name="F:TransRD.ViewModels.RegisterViewModel.navigateToLoginCommand">
+            <summary>The backing field for <see cref="P:TransRD.ViewModels.RegisterViewModel.NavigateToLoginCommand"/>.</summary>
+        </member>
+        <member name="P:TransRD.ViewModels.RegisterViewModel.NavigateToLoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TransRD.ViewModels.RegisterViewModel.NavigateToLoginAsync"/>.</summary>
+        </member>
+        <member name="T:TransRD.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Email">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Email" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Password">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Password" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Mail">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Mail" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FullName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FullName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ConfirmPassword">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ConfirmPassword" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AcceptTerms">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AcceptTerms" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Email">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Email" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Password">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Password" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Mail">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Mail" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FullName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FullName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ConfirmPassword">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ConfirmPassword" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AcceptTerms">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AcceptTerms" generated properties.</summary>
+        </member>
+    </members>
+</doc>
